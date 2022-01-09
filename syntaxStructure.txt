@@ -1,0 +1,114 @@
+if-statement:
+
+if (TEST) {
+    CODE;
+} else if (TEST) {
+    CODE;
+} else {
+    CODE;
+}
+
+
+switch-statement:
+
+switch (OPERAND) {
+    case: CONSTANT:
+        CODE;
+        break;
+    default: 
+        CODE;
+}
+
+
+while-loop:
+
+while (TEST) {
+    CODE;
+}
+
+
+while-continue-loop;
+
+while (TEST) {
+    if (OTHER_TEST) {
+        continue;
+    }
+    CODE;
+}
+
+
+while-break;
+
+while (TEST) {
+    if (OTHER_TEST) {
+        break;
+    }
+    CODE;
+}
+
+
+do-while;
+
+do {
+    CODE;
+} while (TEST);
+
+
+for-loop;
+
+for(INIT; TEST; POST) {
+    CODE;
+}
+
+
+enum creates set of int constaints;
+
+enum { CONST1, CONST2, CONST3 } NAME;
+
+
+jump to a label;
+
+if(ERROR_TEST) {
+    goto fail;
+}
+
+fail:
+    CODE;
+
+
+Define a function;
+
+TYPE NAME(ARG1, ARG2, ..) {
+    CODE;
+    return VALUE;
+}
+
+
+Define a new type;
+
+typedef DEFINITION IDENTIFIER 
+
+
+Packaging many basic datatypes into a single concept;
+
+struct NAME {
+    ELEMENTS;
+} [VARIABLE_NAME]; //variable name is optional
+
+
+A common usecase of ^^^
+
+typedef struct [STRUCT_NAME] {
+    ELEMENTS;
+} INDENTIFIER;
+
+
+Union is like a struct that overlaps in memory;
+
+union NAME {
+    ELEMENTS
+} [VARIABLE_NAME];
+
+
+
+
